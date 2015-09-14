@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FunFacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="An interesting fact goes here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCT-6e-sAA">
+                                <rect key="frame" x="48" y="200" width="216" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="216" id="UJS-Fy-5qF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5p-ZQ-fSn">
+                                <rect key="frame" x="48" y="448" width="216" height="61"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="5Z5-j2-8s3"/>
+                                    <constraint firstAttribute="width" constant="216" id="ikz-6T-Esc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                <color key="tintColor" red="0.29411764705882354" green="0.68627450980392157" blue="0.6470588235294118" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Show Another Fun Fact"/>
+                                <connections>
+                                    <action selector="showFunFact" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cx4-bV-bJz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you know?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRY-ps-Dbg">
+                                <rect key="frame" x="52" y="60" width="116" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="Oze-ia-l95"/>
+                                    <constraint firstAttribute="width" constant="116" id="V2T-9B-rvf"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="ZEN-zm-khw"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="116" id="ldD-B4-83z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3529411764705882" green="0.73333333333333328" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="eCT-6e-sAA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="180" id="2wq-yz-Pjx"/>
+                            <constraint firstItem="GRY-ps-Dbg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="3Pa-yA-5VK"/>
+                            <constraint firstItem="GRY-ps-Dbg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="36" id="3Wt-4d-0Fd"/>
+                            <constraint firstItem="s5p-ZQ-fSn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="CpD-4W-8vs"/>
+                            <constraint firstItem="GRY-ps-Dbg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="Skq-vB-XfM"/>
+                            <constraint firstItem="eCT-6e-sAA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="28" id="ZWU-Zy-DX5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="s5p-ZQ-fSn" secondAttribute="bottom" constant="59" id="rS1-3W-BCs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="funFactButton" destination="s5p-ZQ-fSn" id="hkQ-FN-9z0"/>
+                        <outlet property="funFactLabel" destination="eCT-6e-sAA" id="m4f-ck-LUN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129" y="291"/>
+        </scene>
+    </scenes>
+</document>
